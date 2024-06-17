@@ -1,0 +1,25 @@
+{
+  "name": "amiko-desafio",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "desafio técnicno - api com nosql - amiko soluções",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "dev": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "Yves Ribeiro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
