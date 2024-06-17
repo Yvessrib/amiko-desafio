@@ -14,18 +14,20 @@ Retorna uma lista de chamadas com suporte à filtragem.
 
 #### Filtragem
 Você pode filtrar as chamadas utilizando parâmetros na URL. É possível filtrar pelo nome do Hospital, e caso haja filtragem por nome, é possível filtrar pelo número do quarto. Exemplos:
-- Filtro: `http://localhost:3000/calls?hospitalName=Nome%20Hospital&roomNumber=NumeroDoQuarto`
+- `http://localhost:3000/calls?hospitalName=Nome%20Hospital&roomNumber=NumeroDoQuarto`
+- `http://localhost:3000/calls?hospitalName=Santa%20Casa&roomNumber=103`
+
 
 ## Instalação, execução e testes
 
 1. Instale as dependências:
-    ```bash
-    # Usando pnpm
-    pnpm install
-
-    # Ou usando npm
-    npm install
-    ```
+  ```bash
+  # Usando pnpm
+  pnpm install
+    
+  # Ou usando npm
+  npm install
+  ```
 
 2. Inicializando a API:
   ```bash
@@ -54,7 +56,7 @@ Você pode filtrar as chamadas utilizando parâmetros na URL. É possível filtr
 - Supertest
 - MongoDB
 
-  ### Melhorias
-  Ao rodar os testes, fica um erro de "Open handle" que não soube resolver.
+## Melhorias
+Ao rodar os testes, fica um erro de "Open handle" que não soube resolver.
 
 
