@@ -68,8 +68,16 @@ app.get('/calls', async (req, res) => {
 
   //Busca as chamadas de acordo com o filtro
   const calls = await Calls.find(filter)
-  res.send(calls)
+  res.send(calls.map(call => ({
+    hospitalName: call.hospital.name,
+    roomNumber: call.hospital.roomNumber,
+    call: call.name,
+  })))
+
+  
 })
+
+
 
 app.listen(port, () => {
   mongoose.connect('mongodb+srv://admin:passwordadmin@amiko-api.wbzrcsm.mongodb.net/?retryWrites=true&w=majority&appName=amiko-api');
