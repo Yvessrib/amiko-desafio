@@ -7,7 +7,6 @@ import http from 'http'
 //Criando o servidor e configurando a leitura de JSON
 const app = express()
 app.use(express.json())
-const server = http.createServer(app)
 const port = 3000
 
 //Criando rota de POST para criação de chamadas
@@ -73,11 +72,8 @@ app.get('/calls', async (req, res) => {
     roomNumber: call.hospital.roomNumber,
     call: call.name,
   })))
-
   
 })
-
-
 
 app.listen(port, () => {
   mongoose.connect('mongodb+srv://admin:passwordadmin@amiko-api.wbzrcsm.mongodb.net/?retryWrites=true&w=majority&appName=amiko-api');
